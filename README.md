@@ -85,12 +85,12 @@ Arena-Score zu erzielen.
 
 ## 5. Committen und pushen
 
-Arbeitet mit nachvollziehbaren Commits. Zum Beispiel:
+Arbeitet mit nachvollziehbaren Commits, am einfachsten direkt über VS Code. Im Terminal sähe das alternativ so aus:
 
 ```bash
 git add tests TEST_PLAN.md
 git commit -m "Add boundary tests for time parsing"
-git push -u origin HEAD
+git push
 ```
 
 Bei jedem Push führt GitHub Actions automatisch eure reguläre Testsuite gegen die
@@ -126,7 +126,7 @@ Score: 7 / 10 faulty implementations detected
 - **survived** bedeutet: Die fehlerhafte Variante erfüllt Ihre aktuelle Testsuite noch.
 
 Ein hoher Score entsteht nicht dadurch, dass möglichst viele fast identische Tests
-schreiben. Suche stattdessen nach unterschiedlichen Fehlermöglichkeiten.
+geschrieben werden. Suche stattdessen nach unterschiedlichen Fehlermöglichkeiten.
 
 ### Wichtig zur Arena
 
